@@ -18,7 +18,8 @@ public class Actionsexample {
 	//a.moveToElement(driver.findElement(By.xpath("//span[contains(@class,'nav-line-2')][contains(text(),'Account & Lists')]"))).build().perform();
 	//Thread.sleep(1000);
 	a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").build().perform();
-Thread.sleep(1000);
+	a.contextClick(driver.findElement(By.xpath("//span[contains(@class,'nav-line-2')][contains(text(),'Account & Lists')]"))).build().perform();
+Thread.sleep(2000);
 	driver.quit();
 
 	}
