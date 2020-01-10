@@ -1,13 +1,16 @@
 package Drivercheck;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class ActionsexampleTest {
 	//public static void main(String[] args) throws InterruptedException {
+	@Test
 	public void actionexample() throws InterruptedException
 	{
 		WebDriver driver;
