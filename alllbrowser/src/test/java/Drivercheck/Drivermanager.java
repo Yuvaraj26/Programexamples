@@ -1,15 +1,20 @@
 package Drivercheck;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Drivermanager {
-public static void main(String[] args) throws InterruptedException {
+//public static void main(String[] args) throws InterruptedException {
+	@Test
 	//Used to invoke safari driver
+	public void drivermangager() throws InterruptedException
+	{
 	WebDriver driver2=new SafariDriver();
 	driver2.get("https://www.google.com");
 	driver2.quit();
